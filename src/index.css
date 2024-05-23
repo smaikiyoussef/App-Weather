@@ -1,13 +1,90 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222; /* Fallback background color */
+  background-image: url('./assets/sunset.jpg'); /* Fallback background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px; /* Adjust maximum width as needed */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+  border-radius: 10px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top p, .top h1 {
+  margin-bottom: 10px;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color and opacity as needed */
+  color: #fff;
+  width: 70%;
+}
+
+.search button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4CAF50; /* Adjust the button color as needed */
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.search button:hover {
+  background-color: #45a049; /* Adjust the button hover color as needed */
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom div {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color and opacity as needed */
+}
+
+.bold {
+  font-weight: 700;
 }
